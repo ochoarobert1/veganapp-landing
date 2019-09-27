@@ -107,8 +107,9 @@
                 text-transform: uppercase;
                 font-weight: 300;
                 letter-spacing: 1px;
-                margin: 0.5rem 0;
-                margin-top: 0.6rem;
+                margin: 0;
+                padding: .5rem;
+                background: black;
             }
 
             .main-hero-description {
@@ -124,10 +125,15 @@
                 text-shadow: 0 0 16px #8e316f;
                 text-decoration: none;
                 transition: all .3s ease-in-out;
+                margin-bottom: 0.5rem;
+                font-size: 1.9rem;
+                display: block;
+                margin-top: 2rem;
+                text-transform: uppercase;
             }
 
             .main-hero-description a:hover {
-                color: darkblue;
+                color: #ff3371;
                 text-decoration: none;
             }
 
@@ -145,6 +151,7 @@
             .main-hero-buttons img{
                 display: inline-block;
                 max-width: 130px;
+                border-radius: 10px;
             }
 
             .powered {
@@ -180,7 +187,7 @@
 
             .custom-modal .modal-title span {
                 display: block;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 color: white;
             }
 
@@ -214,10 +221,10 @@
                 margin-bottom: .5rem;
                 background: #8e316f;
                 color: white;
-                font-size: 1.6rem;
-                padding: 0.8rem;
+                font-size: 1.4rem;
+                padding: 0.6rem;
                 border: 2px solid #ec356f;
-                font-weight: 100;
+                font-weight: 400;
                 letter-spacing: 1px;
                 transition: all .3s ease-in-out;
             }
@@ -258,7 +265,8 @@
             }
 
             /* MEDIAQUERIES */
-            @media (max-width: 1360px) {
+
+            @media (max-width: 1390px) {
                 .img-phone {
                     max-width: 430px;
                     margin: 0 auto;
@@ -301,6 +309,12 @@
                 }
             }
 
+            @media (max-width: 768px) {
+                .main-hero-content {
+                    padding: 1rem;
+                }
+            }
+
             @media (max-width: 480px) {
                 h2 {
                     font-size: 1.4rem;
@@ -333,7 +347,10 @@
                 }
 
                 .powered-mobile {
+                    line-height: 0.2rem;
                     margin-top: 0;
+                    justify-content: center;
+                    flex-flow: column;
                 }
 
                 .custom-modal .modal-title span:last-child {
@@ -371,7 +388,7 @@
                     margin: 0.7rem;
                 }
                 .text-together {
-                    line-height: 0.7rem;
+                    line-height: 1.5rem;
                     font-size: 1.1rem;
                 }
                 h2 {
@@ -390,6 +407,7 @@
                 <div class="main-hero-container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="social-buttons d-xl-block d-lg-block d-md-block d-sm-none d-none">
                         <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
                         <a href=""><i class="fa fa-instagram"></i></a>
                     </div>
                     <div class="container">
@@ -397,24 +415,25 @@
                             <div class="main-hero-content col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="mobile-social-buttons d-xl-none d-lg-none d-md-none d-sm-block d-block">
                                     <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
                                     <a href=""><i class="fa fa-instagram"></i></a>
                                 </div>
                                 <h1>The Ultimate <strong>Vegan</strong> Guide App</h1>
                                 <img src="img/logo.png" alt="Vegan Guide APP" class="img-fluid img-logo" />
                                 <div class="main-hero-description">
                                     <div class="text-together">
-                                        <p>Over <strong>60</strong> Categories</p>
-                                        <p><strong>200</strong> Companies and <strong>5000</strong> Vegan Products</p>
-                                        <p>All in one App.</p>
+                                        <p>OVER <strong>60</strong> CATEGORIES</p>
+                                        <p><strong>200</strong> COMPANIES AND <strong>5000</strong> VEGAN PRODUCTS</p>
+                                        <p>ALL IN ONE APP</p>
                                     </div>
                                     <img src="img/line.png" alt="" class="img-fluid" />
-                                    <h2>The Vegan Struggle is Over</h2>
+                                    <h2>Official Launch <strong>Fall 2019</strong></h2>
                                     <img src="img/line.png" alt="" class="img-fluid img-invert" />
-                                    <h3>Official Launch <strong>Fall 2019</strong></h3>
-                                    <p><a href="" data-toggle="modal" data-target="#exampleModalCenter">Click here</a> to pre-register and be invited to our exclusive beta testing</p>
+                                    <p><a href="" data-toggle="modal" data-target="#exampleModalCenter">Click here</a></p>
+                                    <p>To pre-register and be invited to our exclusive beta testing</p>
                                 </div>
                                 <div class="main-hero-buttons">
-                                    <p>Soon to be available on <span><img src="img/google.svg" alt=""> / <img src="img/apple.svg" alt=""></span></p>
+                                    <p>Soon to be available on <span><img src="img/google.jpg" alt=""> <img src="img/apple.jpg" alt=""></span></p>
                                 </div>
                                 <div class="powered powered-mobile row align-items-center d-xl-none d-lg-none d-md-flex d-sm-flex d-flex">
                                     <p>Powered by</p>
@@ -435,12 +454,12 @@
         </div>
         <!-- Modal -->
         <div class="modal fade custom-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalCenterTitle">
-                            <span>Subscribe to our newsletter</span>
-                            <span>Fill in the form below to get early access and beta updates</span>
+                            <span>Pre-Register Now!</span>
+                            <span>Fill in the form below to get early access and be invited to our exclusive beta testing</span>
                         </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
