@@ -84,6 +84,14 @@
                 text-align: center;
             }
 
+            .corporate h5 {
+                font-size: 1rem;
+                font-weight: 300;
+            }
+            .corporate {
+                text-align: center;
+            }
+
             h1 {
                 font-size: 1.9rem;
                 line-height: 2rem;
@@ -313,6 +321,10 @@
                 .main-hero-content {
                     padding: 1rem;
                 }
+
+                .corporate h5 {
+                    font-size: 0.8rem;
+                }
             }
 
             @media (max-width: 480px) {
@@ -356,6 +368,8 @@
                 .custom-modal .modal-title span:last-child {
                     font-size: 1rem;
                 }
+
+
             }
 
             @media (max-width: 414px) {
@@ -435,6 +449,7 @@
                                 <div class="main-hero-buttons">
                                     <p>Soon to be available on <span><img src="img/google.jpg" alt=""> <img src="img/apple.jpg" alt=""></span></p>
                                 </div>
+
                                 <div class="powered powered-mobile row align-items-center d-xl-none d-lg-none d-md-flex d-sm-flex d-flex">
                                     <p>Powered by</p>
                                     <img src="img/logo-usa.png" alt="Usa Vegan Magazine" />
@@ -446,6 +461,9 @@
                                     <p>Powered by</p>
                                     <img src="img/logo-usa.png" alt="Usa Vegan Magazine" />
                                 </div>
+                            </div>
+                            <div class="corporate col-12">
+                                <h5>Vegan Guide App LLC 2019 -  All rights reserved.</h5>
                             </div>
                         </div>
                     </div>
